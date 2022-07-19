@@ -1,5 +1,5 @@
 import unittest
-from .baralho2 import baralho2
+from .baralho import baralho2
 
 class TestBaralhoISP(unittest.TestCase):
     # Ordem da Saída: C E U P
@@ -88,16 +88,3 @@ class TestBaralhoISP(unittest.TestCase):
                   '01P02P03P04P05P06P07P08P09P10P11P12P'+\
                   '01E02E03E04E05E06E07E08E09E10E11E12E13E'
         self.assertEqual(baralho2(entrada), ['erro',0,0,1], "Erro")
-
-class TestBaralhoNos(unittest.TestCase):
-    def test_case_nos_1(self):
-        self.assertEqual(baralho2('01C01E01E'), [12, 'erro', 13, 13]) 
-
-class TestBaralhoArcos(unittest.TestCase):
-    def test_case_arcos_1(self):
-        self.assertEqual(baralho2('01C01E01E'), [12, 'erro', 13, 13]) 
-
-class TestBaralhoParesArcos(unittest.TestCase):
-    def test_case_pares_arcos_1(self):
-        self.assertEqual(baralho2('01C01E01E'), [12, 'erro', 13, 13]) 
-    
