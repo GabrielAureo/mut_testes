@@ -1,6 +1,3 @@
-import numpy as np
-
-
 def escada2(N,M,matriz):
     direita = M - 1
 
