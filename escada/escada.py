@@ -27,12 +27,3 @@ def escada2(N,M,matriz):
                 zero = False
         direita = direita -1
     return 'S'  
-
-
-N = 3
-M = 3
-matriz = [[0, 1, 1], 
-        [0, 1, 1],
-        [0, 0, 1]]
-
-print(escada2(N,M,matriz))
